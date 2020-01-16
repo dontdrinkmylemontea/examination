@@ -15,8 +15,9 @@ class Completion extends Component {
         <div className={styles.content}>
           某公司有5万元资金用于投资开发项目，如果成功，一年后可获利12%，一旦失败，一年后将丧失全部资金的50%，下表是过去200例类似项目开发的实施结果
           <span className={styles.answer}>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input />
+            {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
           </span>
           .
         </div>
