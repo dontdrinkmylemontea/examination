@@ -1,25 +1,26 @@
 import React, { Component } from 'react';
 // import { connect } from 'dva';
 // import {Spin} from 'antd';
+import { COMPLETESYMBOL } from '../../StaticAttr';
 import styles from './Completion.less';
 
-// @connect(({ loading }) => ({
-//   loadingData: loading,
-// }))
 class Completion extends Component {
   render() {
-    // const { } = this.props;
+    const { index, content } = this.props;
+    const num = content.indexOf(COMPLETESYMBOL);
+    const before = content.slice(0, num);
+    const after = content.slice(num + COMPLETESYMBOL.length, content.length);
     return (
       <div className={styles.root}>
-        <div className={styles.addon}>11.</div>
+        <div className={styles.addon}>{index}.</div>
         <div className={styles.content}>
-          某公司有5万元资金用于投资开发项目，如果成功，一年后可获利12%，一旦失败，一年后将丧失全部资金的50%，下表是过去200例类似项目开发的实施结果
+          {before}
           <span className={styles.answer}>
             <input />
             {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
           </span>
-          .
+          {after}.
         </div>
       </div>
     );

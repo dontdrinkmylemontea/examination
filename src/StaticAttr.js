@@ -8,6 +8,11 @@ export const SUITHEADER = {
   QUESTIONTYPE,
 };
 
+export const QUESTIONTYPES = {
+  CHOICE: 0,
+  COMPLETE: 1,
+  ANSWER: 2,
+};
 const QUESTIONTITLES = ['选择题', '填空题', '解答题'];
 const QUESTIONINFO = [
   '在每小题给出的四个选项中，只有一项是最符合题目要求的',
@@ -21,3 +26,5 @@ export const GROUPHEADERINFO = (questionTypeIndex, questionNums, marks) =>
   }（本大题共 ${questionNums} 小题， 每小题 ${marks} 分，共 ${questionNums * marks} 分，${
     QUESTIONINFO[questionTypeIndex]
   }。）`;
+
+export const COMPLETESYMBOL = '$answer';
